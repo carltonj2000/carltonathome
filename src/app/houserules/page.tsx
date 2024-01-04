@@ -26,30 +26,37 @@ export default async function Food() {
   return (
     <main className="flex flex-col max-w-lg mx-auto items-center gap-2 mt-3">
       <h2 className="text-xl font-bold">Striving For A Vegan Home</h2>
-      <p>
-        I have been mostly vegan since {startVegan.toLocaleDateString()} (
-        {dateDiff(startVegan, today)}). During that time I went from a raw
-        vegan, to vegan, to vegetarian. Now about 95% of the food I eat is
-        vegan, 4.5% vegetarian and 0.5% meat.
-      </p>
-      <div>
-        <h5 className="font-bold">4.5% vegetarian</h5>
+      <div className="text-center">
+        <p className="text-green-500">
+          In order to achieve the above goal I do{" "}
+          <span className="font-semibold italic">NOT</span> allow any 100%
+          meats, dairy or egg products in my house.
+        </p>
         <p>
-          Comes from when I eat out and some prepackaged products that I buy
-          that contain some amounts of dairy or eggs.{" "}
-          <span className="text-green-500">
-            I have a rule of <span className="font-semibold italic">NOT</span>{" "}
-            keeping any 100% meats, dairy or egg products at home.
-          </span>
+          I have been mostly vegan since {startVegan.toLocaleDateString()} (
+          {dateDiff(startVegan, today)}). During that time I went from a raw
+          vegan, to vegan, to vegetarian. My present diet composition is
+          specified below.
         </p>
       </div>
-      <div>
+      <div className="text-center">
+        <h5 className="font-bold">95% vegan</h5>
+        <p>I avoid eating products that contain meat, dairy, eggs, and fish.</p>
+      </div>
+      <div className="text-center">
+        <h5 className="font-bold">4.5% vegetarian</h5>
+        <p>
+          I eat trace amounts of non vegan food that is present in purchased
+          prepackaged products and restaurant dishes.
+        </p>
+      </div>
+      <div className="text-center">
         <h5 className="font-bold">0.5% Carnivore</h5>
         <p>
-          From a marketing perspective I believe one needs to eat traditional
-          carnivore food so that you are not viewed as a vegan/vegeterian
-          militant. Once or twice a year I will eat a burger, steak, hot dog,
-          turkey, etc. Often I go years between carnivore meals.
+          I will eat a burger, steak, hot dog, turkey, etc infrequently. Often a
+          year or more passes between carnivore meals. From a marketing
+          perspective I believe one needs to eat traditional carnivore food so
+          that you are not viewed as a vegan/vegetarian militant.
         </p>
       </div>
     </main>
