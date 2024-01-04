@@ -17,25 +17,32 @@ const authOptions = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET ?? "",
     }),
   ],
-  callbacks: {
-    async signIn({ user, account, profile, email, credentials }) {
-      console.log({ user, email, profile, account, credentials });
-      const isAllowedToSignIn =
-        email === "carlton.joseph@gmail.com" || user === "carltonj2000";
-      if (isAllowedToSignIn) {
-        return true;
-      } else {
-        return "/unauthorized"; // or false
-      }
-    },
-    //   async redirect({ url, baseUrl }) {
-    //     // Allows relative callback URLs
-    //     if (url.startsWith("/")) return `${baseUrl}${url}`;
-    //     // Allows callback URLs on the same origin
-    //     else if (new URL(url).origin === baseUrl) return url;
-    //     return baseUrl;
-    //   },
-  },
+  // callbacks: {
+  //   async signIn({
+  //     user,
+  //     email,
+  //     ...rest
+  //   }: {
+  //     user: User;
+  //     email: string;
+  //     rest: any;
+  //   }) {
+  //     const isAllowedToSignIn =
+  //       email === "carlton.joseph@gmail.com" || user.name === "carltonj2000";
+  //     if (isAllowedToSignIn) {
+  //       return true;
+  //     } else {
+  //       return "/unauthorized"; // or false
+  //     }
+  //   },
+  //   async redirect({ url, baseUrl }) {
+  //     // Allows relative callback URLs
+  //     if (url.startsWith("/")) return `${baseUrl}${url}`;
+  //     // Allows callback URLs on the same origin
+  //     else if (new URL(url).origin === baseUrl) return url;
+  //     return baseUrl;
+  //   },
+  // },
 };
 
 export default authOptions;
