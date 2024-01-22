@@ -51,8 +51,9 @@ export default async function Food() {
         <p>
           I will eat a burger, steak, hot dog, turkey, etc infrequently. Often a
           year or more passes between carnivore meals. From a marketing
-          perspective one needs to eat traditional carnivore food to avoid being
-          viewed as a vegan/vegetarian militant.
+          perspective I eat carnivore foods to{" "}
+          <span className="italic">avoid</span> being viewed as a
+          vegan/vegetarian militant.
         </p>
       </div>
     </main>
