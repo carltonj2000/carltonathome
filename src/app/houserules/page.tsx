@@ -29,8 +29,8 @@ export default async function Food() {
       <div className="text-center">
         <p className="text-green-500">
           In order to achieve the above goal I do{" "}
-          <span className="font-semibold italic">NOT</span> allow any 100%
-          meats, dairy or egg products in my house.
+          <span className="font-semibold italic">not</span> keep or allow any
+          100% meats, dairy or egg products in my home.
         </p>
         <p>
           I have been mostly vegan since {startVegan.toLocaleDateString()} (
