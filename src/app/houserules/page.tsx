@@ -27,16 +27,12 @@ export default async function Food() {
     <main className="flex flex-col max-w-lg mx-auto items-center gap-2 mt-3">
       <h2 className="text-xl font-bold">Striving For A Vegan Home</h2>
       <div className="text-center">
-        <p className="text-green-500">
-          In order to achieve the above goal I do{" "}
-          <span className="font-semibold italic">not</span> keep or allow any
-          100% meats, dairy or egg products in my home.
-        </p>
         <p>
-          I have been mostly vegan since {startVegan.toLocaleDateString()} (
-          {dateDiff(startVegan, today)}). During that time I went from a raw
-          vegan, to vegan, to vegetarian. My present diet composition is
-          specified below.
+          To help achieve the above goal I do not keep or allow any 100% meats,
+          dairy or egg products in my home and have been mostly vegan since
+          {startVegan.toLocaleDateString()} ({dateDiff(startVegan, today)}).
+          During that time I went from a raw vegan, to vegan, to vegetarian. My
+          present diet composition is specified below.
         </p>
       </div>
       <div className="text-center">
