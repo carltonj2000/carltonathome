@@ -11,13 +11,19 @@ cd carltonathome
 # ui
 npx shadcn-ui@latest init
 npx shadcn-ui@latest add dropdown-menu
+npx shadcn-ui@latest add input
+npx shadcn-ui@latest add form
 # db
 npm i kysely @vercel/postgres-kysely
 # following use for db migration cli
 npm i -D dotenv
 npm i -D minimist
-npm i --save-dev @types/minimist
+npm i -D @types/minimist
 npm i -D tsx
+# auth
+npm install next-auth@beta
+npm i kysely @vercel/postgres-kysely
+npm i @auth/kysely-adapter --force
 ```
 
 ## SQL Notes
