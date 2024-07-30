@@ -2,6 +2,7 @@
 
 View providers at `http://localhost:3000/api/auth/providers`.
 Run migrations via `npm run migrate [-d|-u] #`.
+Due to compatibility issues with `kysely` use 'npm i --force'.
 
 ## Creation History
 
