@@ -10,7 +10,7 @@ export default async function Home() {
       <SignUp />
       <SignIn />
       <SignOut />
-      <p>{JSON.stringify(session, null, 2)}</p>
+      <p className="card">{JSON.stringify(session, null, 2)}</p>
     </main>
   );
 }

@@ -5,6 +5,7 @@ import Credentials from "next-auth/providers/credentials";
 import { getUserFromDb } from "./actions/user.actions";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
+  // @ts-ignore
   adapter: KyselyAdapter(db),
   providers: [
     Credentials({
